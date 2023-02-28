@@ -22,3 +22,6 @@ if __name__ == "__main__":
     print(encrypt_message("ABCDEF", 1))  # A_FEDCB
     print(encrypt_message("ABCDEF", 2))  # FEDC_BA
     print(encrypt_message("ABCDEF", 9))  # FEDCBA
+    assert encrypt_message("OI", 1) == "O_I"
+    assert encrypt_message("OIO", 2) == "O_IO"
+    assert encrypt_message("OIO", 3) == "OIO"
